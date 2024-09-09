@@ -1,8 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PhotoController;
-Route::resource('photos', PhotoController::class);
+use App\Http\Controllers\POSHomeController;
+Route::get('/home',[POSHomeController::class,'home']);
+
+
 
 
     
